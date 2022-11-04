@@ -30,8 +30,8 @@ class Model():
         print(f"\nLog : Predicting...\n")
         predictions=self.model.predict(normalized_data)
         #make dir to store predictions
-        predictions="predictions/"
-        os.makedirs(predictions,exist_ok=True)
+        pred_dir="predictions/"
+        os.makedirs(pred_dir,exist_ok=True)
         #convert to pandas dataframe
         df_predictions = pd.DataFrame(predictions)
         #save

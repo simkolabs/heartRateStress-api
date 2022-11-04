@@ -4,3 +4,4 @@ fastapi
 sklearn
 pandas
 uvicorn
+python-multipart
