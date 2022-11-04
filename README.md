@@ -1,9 +1,9 @@
 # heartRateStress-api
 
-   #all libs
+   #  all libs
 
     pip install -r requirements.txt
 
-   #run api
+   #  run api
 
     uvicorn api:app --reload
