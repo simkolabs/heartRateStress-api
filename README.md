@@ -1,6 +1,5 @@
 # heartRateStress-api
 
-
     # all libs
 
     pip install -r requirements.txt
