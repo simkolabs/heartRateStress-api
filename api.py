@@ -22,3 +22,11 @@ async def predict(file: UploadFile = File(...)):
     if os.path.exists(file_path):
         return FileResponse(file_path, filename="predictions.csv")
     return {"error" : "File not found!"}
+
+
+@app.post("/sendMessageDialog/")
+async def send_message(number:str,message:str):
+    api=DialogApi()
+    response=api.message(message=message,number=number)
+    print(response)
+    return response
